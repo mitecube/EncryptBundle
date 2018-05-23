@@ -1,11 +1,14 @@
 {
-    "name" : "specshaper/encrypt-bundle",
+    "name" : "mitecube/encrypt-bundle",
     "type" : "symfony-bundle",
     "description" : "Bundle provides a service for encoding via annotation.",
-    "homepage": "https://github.com/mogilvie/EncryptBundle",
+    "homepage": "https://github.com/mitecube/EncryptBundle",
     "authors" : [{
         "name" : "Mark Ogilvie",
         "email" : "mark.ogilvie@ogilvieconsulting.net"
+    },{
+        "name" : "Fabio Dellutri",
+        "email" : "fabio.dellutri@mitecube.com"
     }],
     "keywords" : [
         "encoder bundle"
@@ -15,10 +18,13 @@
     ],
     "require" : {
         "php": ">=7.1",
-        "symfony/console": "^3.2 || ^4.0",
+        "symfony/console": "^2.8",
         "symfony/framework-bundle": "^3.2 || ^4.0",
         "doctrine/orm": "^2.5",
         "doctrine/doctrine-bundle": "^1.6"
+    },
+    "conflict" : {
+        "specshaper/encrypt-bundle": "*"
     },
     "autoload" : {
         "psr-4": { "SpecShaper\\EncryptBundle\\": "" }
